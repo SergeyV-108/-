@@ -1,0 +1,333 @@
+/* ======================== specialists-page ======================== */
+.specialists-page {
+	// .specialists-page__content
+
+	&__content {
+	}
+}
+
+.content-specialists {
+	// .content-specialists__title
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	// .content-specialists__slider
+
+	&__slider {
+	}
+}
+
+.slider-specialists {
+	// .slider-specialists__container
+
+	&__container {
+	}
+
+	// .slider-specialists__wrapper
+
+	&__wrapper {
+		min-height: 350px;
+		align-items: center;
+
+		@media (max-width: 600px) {
+			min-height: 500px;
+		}
+	}
+
+	// .slider-specialists__slide
+
+	&__slide {
+		width: 100%;
+		max-width: 570px;
+
+		@media (max-width: 600px) {
+			max-width: 240px;
+			height: 450px;
+		}
+
+		&::after {
+			content: "";
+			width: 100%;
+			max-width: 550px;
+			height: 240px;
+			position: absolute;
+			bottom: -8px;
+			left: 10px;
+			z-index: -1;
+
+			border-radius: 10px;
+			background-color: rgb(255, 255, 255);
+			-webkit-box-shadow: 0px 4px 16px rgba(88, 110, 142, 0.14);
+			box-shadow: 0px 4px 16px rgba(88, 110, 142, 0.14);
+
+			@media (max-width: 600px) {
+				max-width: 220px;
+			}
+		}
+	}
+
+	// .slider-specialists__card
+
+	&__card {
+		display: flex;
+		justify-content: space-between;
+
+		background: #ffffff;
+		box-shadow: 0px 4px 16px rgba(88, 110, 142, 0.14);
+		border-radius: 10px;
+
+		@media (max-width: 600px) {
+			flex-wrap: wrap;
+			height: 100%;
+		}
+	}
+
+	// .slider-specialists__arrows
+
+	&__arrows {
+		margin-top: 25px;
+		position: relative;
+
+		@media (min-width: 1200px) {
+			display: none;
+		}
+	}
+
+	// .slider-specialists__button
+
+	&__button {
+		// .slider-specialists__button_prev
+
+		&_prev {
+		}
+
+		// .slider-specialists__button_next
+
+		&_next {
+		}
+	}
+}
+
+.card-specialists {
+	// .card-specialists__image
+
+	&__image {
+		flex: 0 1 50%;
+		padding: 20px 16px 30px 5px;
+		position: relative;
+
+		@media (max-width: 600px) {
+			padding: 17px 0 0 15px;
+			flex: 0 0 100%;
+		}
+	}
+
+	// .card-specialists__information
+
+	&__information {
+		flex: 0 1 50%;
+		padding: 36px 45px 0 0;
+
+		@media (max-width: 600px) {
+			padding: 0 15px;
+			flex: 0 0 100%;
+		}
+	}
+}
+
+.image-card {
+	// .image-card__body
+
+	&__body {
+		width: 260px;
+		height: 260px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: 50%;
+
+		background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #fae2e7;
+
+		box-shadow: inset 0px 4px 20px rgba(92, 121, 162, 0.3);
+
+		@media (max-width: 600px) {
+			width: 160px;
+			height: 160px;
+		}
+
+		img {
+			width: 220px;
+			height: 220px;
+
+			border-radius: 50%;
+
+			border: 10px solid #ffffff;
+
+			box-shadow: 0px 2px 10px rgba(78, 127, 222, 0.49);
+
+			@media (max-width: 600px) {
+				width: 135px;
+				height: 135px;
+
+				border: 6px solid #ffffff;
+			}
+		}
+	}
+}
+
+.information-card {
+	// .information-card__name
+
+	&__name {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		color: #293951;
+
+		@media (max-width: 480px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	// .information-card__specialty
+
+	&__specialty {
+		margin-bottom: 5px;
+
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #293951;
+
+		@media (max-width: 600px) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	// .information-card__experience
+
+	&__experience {
+		padding: 10px 0;
+
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 30px;
+		color: #f78e9b;
+
+		border-top: 1px dashed #edafbf;
+		border-bottom: 1px dashed #edafbf;
+
+		@media (max-width: 600px) {
+			padding: 5px 0;
+
+			font-size: 13px;
+		}
+	}
+
+	// .information-card__metro
+
+	&__metro {
+		margin-top: 10px;
+		padding-left: 25px;
+
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 26px;
+		color: #586e8e;
+
+		background-image: url(../image/page/specialists/metro.png);
+		background-repeat: no-repeat;
+		background-position: 0 center;
+		background-size: 18px auto;
+
+		@media (max-width: 600px) {
+			font-size: 12px;
+		}
+	}
+
+	// .information-card__address
+
+	&__address {
+		margin-bottom: 25px;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 15px;
+		color: #586e8e;
+
+		@media (max-width: 600px) {
+			font-size: 12px;
+		}
+	}
+
+	// .information-card__btn
+
+	&__btn {
+	}
+}
+
+.btn-content {
+	// .btn-content__body
+
+	&__body {
+		width: 210px;
+		height: 46px;
+
+		background: url(../image/page/specialists/arrows.png), linear-gradient(90deg, #e86aad 0%, #5cbafe 100%);
+		background-repeat: no-repeat;
+		background-position: 9px, 0;
+		background-size: auto auto, cover;
+
+		&:hover {
+			background: url(../image/page/specialists/arrows.png), linear-gradient(90deg, #e86aad 0%, #b089cc 100%);
+			background-repeat: no-repeat;
+			background-position: 9px, 0;
+			background-size: auto auto, cover;
+		}
+	}
+
+	// .btn-content__link
+
+	&__link {
+		font-size: 12px;
+	}
+}
+
+.button-main {
+	// .button-main__link
+
+	&__link {
+	}
+}
+
+.slider-button {
+	// .slider-button__const
+
+	&__const {
+		// .slider-button__const_prev
+
+		&_prev {
+		}
+
+		// .slider-button__const_next
+
+		&_next {
+		}
+	}
+
+	// .slider-button__container
+
+	&__container {
+	}
+}
+/* ======================== specialists-page end ==================== */

@@ -1,0 +1,222 @@
+/* ======================== whom-page ======================== */
+.whom-page {
+	// .whom-page__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	// .whom-page__text
+
+	&__text {
+		width: 100%;
+		max-width: 1160%;
+		margin-bottom: 14px;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 26px;
+		text-align: center;
+		color: #586e8e;
+	}
+
+	// .whom-page__items
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 1085px) {
+			margin-bottom: 50px;
+		}
+
+		@media (max-width: 650px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	// .whom-page__item
+
+	&__item {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 26px;
+		color: #586e8e;
+
+		input {
+			display: none;
+		}
+
+		label {
+			margin-bottom: 25px;
+			display: flex;
+
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 28px;
+
+			span {
+				display: none;
+			}
+
+			@media (max-width: 320px) {
+				justify-content: space-between;
+				span {
+					display: inline-block;
+					font-size: 12px;
+				}
+			}
+		}
+
+		li {
+			margin-bottom: 25px;
+			position: relative;
+		}
+
+		// .whom-page__item_indications
+
+		&_indications {
+			flex: 0 0 400px;
+			margin-right: 10px;
+			padding-top: 30px;
+			text-align: right;
+
+			@media (max-width: 1000px) {
+				flex: 0 1 400px;
+			}
+
+			@media (max-width: 650px) {
+				flex: 0 1 100%;
+				margin-right: 0px;
+				text-align: left;
+			}
+
+			@media (max-width: 320px) {
+				& :checked ~ label span {
+					transform: rotate(180deg);
+				}
+
+				& :checked ~ ul {
+					display: inline-block;
+				}
+			}
+
+			label {
+				display: block;
+
+				text-align: right;
+				color: #f78e9b;
+
+				@media (max-width: 650px) {
+					text-align: left;
+				}
+
+				@media (max-width: 320px) {
+					display: flex;
+
+					border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+				}
+			}
+
+			ul {
+				padding-right: 40px;
+
+				@media (max-width: 650px) {
+					padding: 0 0 0 40px;
+				}
+
+				@media (max-width: 320px) {
+					display: none;
+				}
+			}
+
+			li {
+				&::after {
+					content: url(../image/page/whom/check_red.svg);
+					position: absolute;
+					top: 0;
+					right: -40px;
+					z-index: 1;
+
+					@media (max-width: 650px) {
+						flex: 0 0 100%;
+						text-align: left;
+						right: 0;
+						left: -40px;
+					}
+				}
+			}
+		}
+
+		// .whom-page__item_image
+
+		&_image {
+			flex: 0 0 200px;
+			margin-left: 44px;
+
+			
+
+			@media (max-width: 1085px) {
+				display: none;
+			}
+		}
+
+		// .whom-page__item_contraindications
+
+		&_contraindications {
+			flex: 0 0 400px;
+			margin-left: 10px;
+			padding-top: 30px;
+
+			@media (max-width: 1000px) {
+				flex: 0 1 400px;
+			}
+
+			@media (max-width: 650px) {
+				flex: 0 1 100%;
+				margin-left: 0px;
+			}
+
+			@media (max-width: 320px) {
+				& :checked ~ label span {
+					transform: rotate(180deg);
+				}
+
+				& :checked ~ ul {
+					display: inline-block;
+				}
+			}
+
+			label {
+				color: #84a3e6;
+
+				@media (max-width: 320px) {
+					border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+				}
+			}
+
+			ul {
+				padding-left: 40px;
+
+				@media (max-width: 320px) {
+					display: none;
+				}
+			}
+
+			li {
+				&::after {
+					content: url(../image/page/whom/check_blue.svg);
+					position: absolute;
+					top: 0;
+					left: -40px;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}
+/* ======================== whom-page end ==================== */

@@ -1,0 +1,399 @@
+/* ======================== prices-page ======================== */
+.prices-page {
+	// .prices-page__card
+
+	&__card {
+		width: 100%;
+		padding: 32px 15px 27px;
+		position: relative;
+
+		border-radius: 6px;
+		box-shadow: 0px 2px 20px rgba(78, 127, 222, 0.19);
+
+		background-color: #ffffff;
+
+		@media (max-width: 480px) {
+			padding: 26px 14px 17px;
+		}
+
+		&::before {
+			content: url(../image/page/prices/flowers-l.png);
+			position: absolute;
+			bottom: -7px;
+			left: -70px;
+			z-index: -1;
+
+			@media (max-width: 1350px) {
+				display: none;
+			}
+		}
+
+		&::after {
+			content: url(../image/page/prices/flowers-r.png);
+			position: absolute;
+			bottom: 42px;
+			right: -75px;
+			z-index: -1;
+
+			@media (max-width: 1350px) {
+				content: url(../image/page/prices/flowers-bottom.png);
+				width: auto;
+				display: flex;
+				justify-content: center;
+				margin: 0 auto;
+				position: absolute;
+				bottom: -70px;
+				right: 0;
+				left: 0;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+.card-prices {
+	// .card-prices__title
+
+	&__title {
+		margin-bottom: 22px;
+	}
+
+	// .card-prices__header
+
+	&__header {
+		width: 100%;
+
+		padding: 18px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-radius: 6px;
+
+		background: linear-gradient(90deg, #e86aad 0%, #5cbafe 100%);
+		box-shadow: 0px 2px 6px rgba(78, 127, 222, 0.2);
+
+		@media (max-width: 740px) {
+			flex-wrap: wrap;
+		}
+
+		@media (max-width: 480px) {
+			padding: 18px 11px;
+		}
+	}
+
+	// .card-prices__body
+
+	&__body {
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			position: relative;
+
+			tr {
+				height: 50px;
+
+				&::after {
+					content: "";
+					width: 100%;
+					height: 2px;
+					position: absolute;
+					top: 50px;
+					left: 0;
+					z-index: 1;
+
+					background: linear-gradient(90deg, #e86aad 0%, #5cbafe 100%);
+				}
+			}
+
+			th {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 18px;
+				color: #586e8e;
+
+				@media (max-width: 480px) {
+					width: 50%;
+
+					&:not(.active) {
+						opacity: 0.5;
+					}
+				}
+
+				&:first-child {
+					padding-left: 35px;
+					text-align: left;
+
+					@media (max-width: 480px) {
+						display: none;
+					}
+				}
+
+				&:nth-child(2) {
+					&::after {
+						content: url(../image/page/prices/female.svg);
+						margin-left: 10px;
+
+						vertical-align: middle;
+					}
+				}
+
+				&:nth-child(3) {
+					&::after {
+						content: url(../image/page/prices/male.svg);
+						margin-left: 10px;
+
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+
+	// .card-prices__footer
+
+	&__footer {
+		width: 100%;
+
+		padding: 20px 27px;
+		display: flex;
+		align-items: center;
+
+		border-radius: 6px;
+
+		background-color: #f8fafd;
+
+		@media (max-width: 610px) {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.header-card-prices {
+	// .header-card-prices__text
+
+	&__text {
+		flex: 0 1 640px;
+		margin: 0 20px 0 0;
+		padding-left: 49px;
+
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #ffffff;
+
+		background-image: url(../image/page/prices/mark.svg);
+		background-repeat: no-repeat;
+		background-position: 9px 0;
+		background-size: 30px auto;
+
+		@media (max-width: 740px) {
+			margin: 0 0 20px 0;
+		}
+
+		@media (max-width: 480px) {
+			padding-left: 10.21vw;
+			font-size: 12px;
+			line-height: 14px;
+
+			background-position: 1.88vw 0;
+			background-size: 20px auto;
+		}
+	}
+
+	// .header-card-prices__options
+
+	&__options {
+		width: 100%;
+		max-width: 390px;
+		height: 46px;
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 12px;
+			height: 8px;
+			position: absolute;
+			top: 19px;
+			right: 20px;
+			z-index: 1;
+			pointer-events: none;
+
+			border-top: 8px solid #f78e9b;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+
+			@media (max-width: 480px) {
+				width: 8px;
+				height: 5px;
+				right: 10px;
+
+				border-top: 5px solid #f78e9b;
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+			}
+		}
+	}
+
+	// .header-card-prices__select
+
+	&__select {
+		width: 100%;
+		height: 100%;
+		padding: 0 20px 0 42px;
+		position: relative;
+
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		color: #586e8e;
+
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		&::-ms-expand {
+			display: none;
+		}
+
+		border-radius: 6px;
+
+		background-color: #ffffff;
+		background-image: url(../image/page/prices/pin.svg);
+		background-repeat: no-repeat;
+		background-position: 22px center;
+		background-size: 10px 14px;
+
+		@media (max-width: 700px) {
+			padding: 0 20px 0 6vw;
+
+			background-position: 2.5vw center;
+		}
+
+		@media (max-width: 480px) {
+			padding: 0 20px 0 32px;
+			font-size: 12px;
+
+			background-position: 12px center;
+		}
+	}
+}
+
+.body-card-prices {
+	// .body-card-prices__zone
+
+	&__zone {
+		padding-left: 35px;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 18px;
+		color: #586e8e;
+
+		border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+
+		@media (max-width: 480px) {
+			padding-left: 10px;
+		}
+	}
+
+	// .body-card-prices__cost
+
+	&__cost {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 18px;
+		color: #293951;
+		text-align: center;
+
+		border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
+
+		@media (max-width: 480px) {
+			padding-right: 16px;
+		}
+
+		// .body-card-prices__cost_female
+
+		&_female {
+			@media (max-width: 480px) {
+				text-align: right;
+
+				&.remove {
+					display: none;
+				}
+			}
+		}
+
+		// .body-card-prices__cost_male
+
+		&_male {
+			@media (max-width: 480px) {
+				text-align: right;
+
+				&.remove {
+					display: none;
+				}
+			}
+		}
+
+		i {
+			margin-left: 5px;
+
+			font-size: 12px;
+			line-height: 25px;
+			color: #293951;
+		}
+	}
+}
+
+.footer-card-prices {
+	// .footer-card-prices__text
+
+	&__text {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 50px 0 0;
+
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 20px;
+		color: #293951;
+
+		@media (max-width: 610px) {
+			margin: 20px 0;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 12px;
+			line-height: 17px;
+		}
+	}
+
+	// .footer-card-prices__phone
+
+	&__phone {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 20px;
+		color: #f895a1;
+		white-space: nowrap;
+
+		&::before {
+			content: url(../image/page/prices/phone.svg);
+			margin-right: 10px;
+			vertical-align: middle;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 16px;
+		}
+	}
+}
+
+/* ======================== prices-page end ==================== */

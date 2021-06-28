@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Инструкция для IE старой версии -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Подключение стилей слайдера -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>МЕДИКАЛКЛАБ</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!-- header -->
+
+		<header class="header">
+			<div class="container">
+				<div class="header__top top-header">
+					<div class="top-header__logo">
+						<picture>
+							<source srcset="image/header/logo.svg" type="image/svg">
+							<img src="image/header/logo.png" alt="">
+						</picture>
+					</div>
+					<div class="top-header__address address-header modal-body">
+						<div class="address-header__body">
+							<div class="address-header__title">
+								<i class='fas fa-map-marker-alt'></i>
+								<span class="address-header__text">Адреса медцентров</span>
+								<span class="address-header__close modal-close">&#10005;</span>
+							</div>
+							<a href="#" class="address-header__link">
+								<span>Жулебино</span><br>Жулебинский бульвар 25
+							</a>
+							<a href="#" class="address-header__link">
+								<span>Жулебино</span><br>Жулебинский бульвар 25
+							</a>
+						</div>
+					</div>
+					<div class="top-header__addresses modal-btn"><i class='fas fa-map-marker-alt'></i>Адреса</div>
+					<div class="top-header__contact contact-header">
+						<div class="contact-header__phone phone-contact">
+							<div class="phone-contact__text">Есть вопросы? <span>Звоните!</span></div>
+							<a href="tel:84951268925" class="phone-contact__num">8 495 126-89-25</a>
+						</div>
+						<button class="contact-header__btn modal-btn" type="submit">Записаться на эпиляцию</button>
+					</div>
+
+					<!-- modal-form -->
+
+					<div class="top-header__modal modal-form">
+						<div class="container">
+							<div class="modal-form__form modal-form__form_header form-modal">
+								<form>
+									<fieldset>
+										<legend class="form-modal__legend form-modal__legend_header">Записаться на
+											эпиляцию</legend>
+										<p class="form-modal__text">Оставьте свои данные для записи на процедуру.</p>
+										<input class="form-modal__input" type="text" placeholder="Ваше имя*">
+										<input class="form-modal__input" type="tel" placeholder="+7 (___) ---_--_--*"
+											pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+										<div class="form-modal__select select-modal">
+											<select name="clinic">
+												<option value="" disabled selected>Выберете клинику*</option>
+												<option value="Медцентр на Малой Юшуньской">Медцентр на Малой Юшуньской
+												</option>
+												<option value="Медцентр в Жулебино">Медцентр в Жулебино</option>
+												<option value="Медцентр на Домодедовской">Медцентр на Домодедовской
+												</option>
+											</select>
+											<div class="select-modal__arrow"></div>
+										</div>
+										<textarea class="form-modal__area"
+											placeholder="Желаемое время и дата"></textarea>
+									</fieldset>
+									<fieldset>
+										<button
+											class="form-modal__button form-modal__button_header button-main modal-btn"
+											type="submit" value="Отправить">Отправить</button>
+										<div class="form-modal__check">
+											<input type="checkbox">
+											<p>
+												Даю согласие на обработку своих персональных данных <span>(Политика
+													конфиденциальности)</span>
+											</p>
+										</div>
+									</fieldset>
+								</form>
+								<div class="form-modal__close form-modal__close_header modal-close">&#10005;</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal-form end -->
+
+					<!-- modal-inform -->
+
+					<div class="top-header__modal-inform modal-inform">
+						<div class="container">
+							<div class="modal-inform__body">
+								<div class="modal-inform__content content-modal">
+									<div class="content-modal__title">Ваша заявка отправлена</div>
+									<div class="content-modal__text">В ближайшее время наш специалист свяжется с Вами
+										для записи на процедуру.</div>
+								</div>
+								<div class="modal-inform__close modal-inform__close_header modal-close">&#10005;</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal-inform end -->
+
+					<div class="top-header__burger burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__bottom bottom-header">
+					<ul class="bottom-header__list">
+						<li><a href="#" class="bottom-header__link modal-btn">НАШИ ФИЛИАЛЫ</a></li>
+						<li><a href="#" class="bottom-header__link" data-scroll="#zones">ЗОНЫ ЭПИЛЯЦИИ</a></li>
+						<li><a href="#" class="bottom-header__link" data-scroll="#prices">НАШИ ЦЕНЫ</a></li>
+						<li><a href="#" class="bottom-header__link" data-scroll="#equipment">О ЛАЗЕРЕ MeDioStar NeXT
+								PRO</a></li>
+						<li><a href="#" class="bottom-header__link" data-scroll="#effect">РЕЗУЛЬТАТЫ</a></li>
+						<li><a href="#" class="bottom-header__link" data-scroll="#reviews">ОТЗЫВЫ</a></li>
+						<li><a href="#" class="bottom-header__link bottom-header__link_red">На сайт клиники<i
+									class='fas fa-chevron-right'></i></a></li>
+					</ul>
+
+					<!-- modal-branch -->
+
+					<div class="bottom-header__modal modal-branch">
+						<div class="modal-branch__body">
+							<div class="modal-branch__title">4 филиала <span>в москве</span><span
+									class="modal-branch__close modal-close">&#10005;</span></div>
+							<div class="modal-branch__content content-branch">
+								<ul class="content-branch__list">
+									<li><a href="#" class="content-branch__link"><span>Жулебино</span><br>Жулебинский
+											бульвар 25</a></li>
+									<li><a href="#" class="content-branch__link"><span>Жулебино</span><br>Жулебинский
+											бульвар 25</a></li>
+									<li><a href="#" class="content-branch__link"><span>Жулебино</span><br>Жулебинский
+											бульвар 25</a></li>
+									<li><a href="#" class="content-branch__link"><span>Жулебино</span><br>Жулебинский
+											бульвар 25</a></li>
+								</ul>
+								<div class="content-branch__map">
+									<a href="https://www.google.com/maps" target="_blank">
+										<img src="image/header/map.jpg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal-branch end -->
+
+				</nav>
+			</div>
+		</header>
+
+		<!-- page -->
+
+		<main class="page">
+
+			<!-- intro-page -->
+
+			<section class="page__intro intro-page">
+				<div class="container">
+					<nav class="intro-page__breadcrumbs breadcrumbs-intro">
+						<ul class="breadcrumbs-intro__list">
+							<li><a href="#" class="breadcrumbs-intro__link">МедикалКлаб</a></li>
+							<li><span class="breadcrumbs-intro__arrow"></span></li>
+							<li><a href="#" class="breadcrumbs-intro__link">Отделения</a></li>
+							<li><span class="breadcrumbs-intro__arrow"></span></li>
+							<li><a href="#" class="breadcrumbs-intro__link">Косметология</a></li>
+							<li><span class="breadcrumbs-intro__arrow"></span></li>
+							<li>
+								<p class="breadcrumbs-intro__item">Лазерная эпиляция</p>
+							</li>
+						</ul>
+					</nav>
+					<h2 class="intro-page__title">
+						Эпиляция диодным лазером <span>MeDioStar NeXT PRO</span><span></span>
+					</h2>
+					<div class="intro-page__text">Избавим от волос надолго на самом современном оборудовании!</div>
+					<div class="intro-page__cost cost-intro">
+						<p class="cost-intro__text">Стоимость сеанса:</p>
+						<p class="cost-intro__total">от <span>1 200 <i class='fas fa-ruble-sign'></i></span></p>
+					</div>
+					<div class="intro-page__text">Запишись к нам сегодня и получи скидку!</div>
+					<button class="intro-page__btn modal-btn" type="submit">Получить скидку!</button>
+
+					<!-- modal-form -->
+
+					<div class="intro-page__modal modal-form">
+						<div class="container">
+							<div class="modal-form__form modal-form__form_intro form-modal">
+								<div class="form-modal__discount">
+									<p><span>-40%</span></p>
+								</div>
+								<form>
+									<fieldset>
+										<legend class="form-modal__legend form-modal__legend_intro"><span>Получите
+												скидку -
+											</span><br>запишитесь прямо сейчас!</legend>
+										<input class="form-modal__input" type="text" placeholder="Ваше имя*">
+										<input class="form-modal__input" type="tel" placeholder="+7 (___) ---_--_--*"
+											pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+										<div class="form-modal__select select-modal">
+											<select name="clinic">
+												<option value="" disabled selected>Выберете клинику*</option>
+												<option value="Медцентр на Малой Юшуньской">Медцентр на Малой Юшуньской
+												</option>
+												<option value="Медцентр в Жулебино">Медцентр в Жулебино</option>
+												<option value="Медцентр на Домодедовской">Медцентр на Домодедовской
+												</option>
+											</select>
+											<div class="select-modal__arrow"></div>
+										</div>
+										<textarea class="form-modal__area"
+											placeholder="Желаемое время и дата"></textarea>
+									</fieldset>
+									<fieldset>
+										<button
+											class="form-modal__button form-modal__button_intro button-main modal-btn"
+											type="submit" value="Отправить">Получить скидку</button>
+										<div class="form-modal__check">
+											<input type="checkbox">
+											<p>
+												Даю согласие на обработку своих персональных данных <span>(Политика
+													конфиденциальности)</span>
+											</p>
+										</div>
+									</fieldset>
+								</form>
+								<div class="form-modal__close form-modal__close_intro modal-close">&#10005;</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal-form end -->
+
+					<!-- modal-inform -->
+
+					<div class="intro-page__modal-inform modal-inform">
+						<div class="container">
+							<div class="modal-inform__body">
+								<div class="modal-inform__content content-modal">
+									<div class="content-modal__title">Спасибо за Ваше обращение</div>
+									<div class="content-modal__text">Наш мастер свяжется с Вами в ближайшее время.</div>
+								</div>
+								<div class="modal-inform__close modal-inform__close_intro modal-close">&#10005;</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- modal-inform end -->
+
+					<div class="intro-page__info info-intro">
+						<div class="info-intro__item item-info">
+							<div class="item-info__text">Длительность сеанса: <br><span>5-10 минут</span></div>
+						</div>
+						<div class="info-intro__item item-info">
+							<div class="item-info__text">Курс процедур: <br><span>6-8 / за 6 месяцев</span>
+							</div>
+						</div>
+						<div class="info-intro__item item-info">
+							<div class="item-info__text">Работаем <br><span>без выходных</span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- about-page -->
+
+			<section class="page__about about-page">
+				<div class="container">
+					<h3 class="about-page__title block-title">Абсолютно безопасная и безболезненная
+						эпиляция лазером</h3>
+					<div class="about-page__text">Небольшой текст о процедуре. Принцип действия аппарата Soprano Ice
+						Platinum с технологией Titanium основан на запатентованной инновационной технологии удаления
+						волос —
+						SHR ™. Технология Super Hair Removal предполагает воздействие на фолликулу луча лазера и его
+						тепловой энергии. В волос поступает 10 импульсов до разрушения, но тепла выделяется меньше. Это
+						обеспечивает быстроту и безболезненность процесса.
+					</div>
+				</div>
+			</section>
+
+			<!-- subject-page -->
+
+			<section class="page__subject subject-page">
+				<div class="container">
+					<h4 class="subject-page__title section-title">ЧТО ТАКОЕ АППАРАТНАЯ ЭПИЛЯЦИЯ</h4>
+					<div class="subject-page__subtitle">ВСПЫШКА АППАРАТА MeDioStar NeXT PRO</div>
+					<div class="subject-page__arrow"><i class='fas fa-chevron-down'></i></div>
+					<div class="subject-page__items">
+						<div class="subject-page__item">
+							<picture>
+								<source srcset="image/page/subject/1.svg" type="image/svg">
+								<source srcset="image/page/subject/1.webp" type="image/webp">
+								<source srcset="image/page/subject/1.avif" type="image/avif">
+								<img src="image/page/subject/1.jpg" alt="">
+							</picture>
+							<div class="subject-page__text">Вспышка света с определенной длиной волны
+								на фолликул волоса</div>
+						</div>
+						<div class="subject-page__item">
+							<picture>
+								<source srcset="image/page/subject/2.svg" type="image/svg">
+								<source srcset="image/page/subject/2.webp" type="image/webp">
+								<source srcset="image/page/subject/2.avif" type="image/avif">
+								<img src="image/page/subject/2.jpg" alt="">
+							</picture>
+							<div class="subject-page__text">Меланин (кожный пигмент) поглощает красный свет
+								диодного лазере MeDioStar NeXT PRO
+								и нагревается</div>
+						</div>
+						<div class="subject-page__item">
+							<picture>
+								<source srcset="image/page/subject/3.svg" type="image/svg">
+								<source srcset="image/page/subject/3.webp" type="image/webp">
+								<source srcset="image/page/subject/3.avif" type="image/avif">
+								<img src="image/page/subject/3.jpg" alt="">
+							</picture>
+							<div class="subject-page__text">Фолликулы волос в активной стадии роста сгорают
+								изнутри, прекращают рост и выпадают через 2 недели</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- advantages-page -->
+
+			<section class="page__advantages advantages-page">
+				<div class="container">
+					<h4 class="advantages-page__title section-title">ПРЕИМУЩЕСТВА ЛАЗЕРНОЙ ЭПИЛЯЦИИ В МЕДЦЕНТРЕ
+						"МЕДИКАЛКЛАБ"</h4>
+					<div class="advantages-page__slider slider-advantages">
+						<div class="slider-advantages__container slider-container swiper-container">
+							<div class="slider-advantages__items slider-wrapper swiper-wrapper">
+								<div class="slider-advantages__slide slide-advantages swiper-slide">
+									<div class="slide-advantages__bg-image">
+										<div class="slide-advantages__image">
+											<picture>
+												<source srcset="image/page/advantages/1.svg" type="image/svg">
+												<img src="image/page/advantages/1.png" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="slide-advantages__title">Диодный лазер (Германия)
+										<br><span>MeDioStar
+											NeXT
+											PRO</span>
+									</div>
+									<div class="slide-advantages__text">Наиболее высокоскоростной лазер сокращает
+										время
+										сеансов
+										эпиляции - процедура пройдет максимально быстро;</div>
+								</div>
+								<div class="slider-advantages__slide slide-advantages swiper-slide">
+									<div class="slide-advantages__bg-image">
+										<div class="slide-advantages__image">
+											<picture>
+												<source srcset="image/page/advantages/2.svg" type="image/svg">
+												<img src="image/page/advantages/2.png" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="slide-advantages__title">Абсолютно<br><span>безболезненные
+											сеансы</span>
+									</div>
+									<div class="slide-advantages__text">Интегрированная система охлаждения лазера
+										обеспечиает
+										интенсивное охлаждение, комфорт и безопасность процедуры;</div>
+								</div>
+								<div class="slider-advantages__slide slide-advantages swiper-slide">
+									<div class="slide-advantages__bg-image">
+										<div class="slide-advantages__image">
+											<picture>
+												<source srcset="image/page/advantages/3.svg" type="image/svg">
+												<img src="image/page/advantages/3.png" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="slide-advantages__title">Эпиляция<br><span>365 дней в году</span>
+									</div>
+									<div class="slide-advantages__text">Инновационная технология двойного
+										импульсапозволяет
+										производить эпиляцию круглый год и исключает гиперпигментацию кожи;</div>
+								</div>
+								<div class="slider-advantages__slide slide-advantages swiper-slide">
+									<div class="slide-advantages__bg-image">
+										<div class="slide-advantages__image">
+											<picture>
+												<source srcset="image/page/advantages/4.svg" type="image/svg">
+												<img src="image/page/advantages/4.png" alt="">
+											</picture>
+										</div>
+									</div>
+									<div class="slide-advantages__title">Избавим от нежелательных
+										волос<br><span>навсегда</span>
+									</div>
+									<div class="slide-advantages__text">Волны (810 нм + 940 нм) диодного лазера
+										воздействуют
+										и на
+										волосяной фолликул и на сосуды, питающие волос. Таким образом, волосы не
+										просто
+										удаляются, а перестают расти;</div>
+								</div>
+							</div>
+							<!-- Arrows -->
+							<div class="slider-advantages__arrows slider-arrows">
+								<div
+									class="slider-advantages__button swiper-button-prev slider-button slider-button-prev">
+									<i class='fas fa-less-than'></i>
+								</div>
+								<div
+									class="slider-advantages__button swiper-button-next slider-button slider-button-next">
+									<i class='fas fa-greater-than'></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- zones-page -->
+
+			<section class="page__zones zones-page" id="zones">
+				<div class="container">
+					<h4 class="zones-page__title section-title">Зоны диодной лазерной эпиляции</h4>
+					<div class="zones-page__slider slider-zones">
+						<div class="slider-zones__container slider-container swiper-container">
+							<div class="slider-zones__items slider-wrapper swiper-wrapper">
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/1.jpg" alt="">
+									<div class="slide-zones__text">Лицо</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/2.jpg" alt="">
+									<div class="slide-zones__text">Живот</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/3.jpg" alt="">
+									<div class="slide-zones__text">Подмышечные<br>впадины</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/4.jpg" alt="">
+									<div class="slide-zones__text">Спина</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/5.jpg" alt="">
+									<div class="slide-zones__text">Бикини</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/6.jpg" alt="">
+									<div class="slide-zones__text">Грудь</div>
+								</div>
+								<div class="slider-zones__slide slide-zones swiper-slide">
+									<img src="image/page/zones/7.jpg" alt="">
+									<div class="slide-zones__text">Ноги</div>
+								</div>
+							</div>
+							<!-- Arrows -->
+							<div class="slider-zones__arrows slider-arrows">
+								<div class="slider-zones__button swiper-button-prev slider-button slider-button-prev">
+									<i class='fas fa-less-than'></i>
+								</div>
+								<!-- Pagination -->
+								<div class="slider-zones__pagination swiper-pagination slider-pagination"></div>
+								<div class="slider-zones__button swiper-button-next slider-button slider-button-next">
+									<i class='fas fa-greater-than'></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- whom-page -->
+
+			<section class="page__whom whom-page">
+				<div class="container">
+					<h4 class="whom-page__title section-title">ДЛЯ КОГО ПОДХОДИТ ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</h4>
+					<div class="whom-page__text">Небольшой текст о процедуре. Принцип действия аппарата Soprano Ice
+						Platinum с технологией Titanium основан на запатентованной инновационной технологии удаления
+						волос — SHR ™. Технология Super Hair Removal предполагает воздействие на фолликулу луча
+						лазера и его тепловой энергии. В волос поступает 10 импульсов до разрушения, но тепла
+						выделяется меньше. Это обеспечивает быстроту и безболезненность процесса.</div>
+					<div class="whom-page__items">
+						<div class="whom-page__item whom-page__item_indications">
+							<input type="checkbox" id="indications">
+							<label for="indications">Показания:<span>&#9660;</span></label>
+							<ul>
+								<li>Длительном кашле</li>
+								<li>Сильной одышке</li>
+								<li>Частых респираторно-вирусных заболеваниях</li>
+								<li>Резком похудении</li>
+								<li>Обострении хронических заболеваний легких</li>
+							</ul>
+						</div>
+						<div class="whom-page__item whom-page__item_image">
+							<picture>
+								<source srcset="image/page/whom/1.avif" type="image/avif">
+								<source srcset="image/page/whom/1.webp" type="image/webp">
+								<source srcset="image/page/whom/1.svg" type="image/svg">
+								<img src="image/page/whom/1.png" alt="">
+							</picture>
+						</div>
+						<div class="whom-page__item whom-page__item_contraindications">
+							<input type="checkbox" id="contraindications">
+							<label for="contraindications">Противопоказания:<span>&#9660;</span></label>
+							<ul>
+								<li>Воспалительных и других заболеваний легких и плевры;</li>
+								<li>Заболеваний сердца и крупных сосудов;</li>
+								<li>Туберкулеза легких;</li>
+								<li>Новообразований легких и органов средостения.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- prices-page -->
+
+			<section class="page__prices prices-page" id="prices">
+				<div class="container">
+					<div class="prices-page__card card-prices">
+						<h4 class="card-prices__title section-title">ЦЕНЫ НА ЛАЗЕРНУЮ ЭПИЛЯЦИЮ:</h4>
+						<div class="card-prices__header header-card-prices">
+							<div class="header-card-prices__text">Цены отличаются в зависимости от филиала,
+								пожалуйста, выберите нужный Вам филиал:</div>
+							<div class="header-card-prices__options">
+								<select class="header-card-prices__select">
+									<option value="">Медцентр на Малой Юшуньской</option>
+									<option value="">Медцентр в Жулебино</option>
+									<option value="">Медцентр на Домодедовской</option>
+								</select>
+
+							</div>
+						</div>
+						<div class="card-prices__body body-card-prices">
+							<table id="table">
+								<tr>
+									<th>Лазерная эпиляция</th>
+									<th id="female">Для женщин</th>
+									<th id="male">Для мужчин</th>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Верхняя губа</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 200<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">1 800<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Подбородок</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 300<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">1 900<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Межбровная зона</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 200<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">1 800<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Щеки</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 700<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">2 300<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Бакенбарды</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 200<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">1 800<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+								<tr>
+									<td class="body-card-prices__zone">Шея</td>
+									<td class="body-card-prices__cost body-card-prices__cost_female">1 700<i
+											class='fas fa-ruble-sign'></i></td>
+									<td class="body-card-prices__cost body-card-prices__cost_male">2 300<i
+											class='fas fa-ruble-sign'></i></td>
+								</tr>
+							</table>
+						</div>
+						<div class="card-prices__footer footer-card-prices">
+							<div class="footer-card-prices__text">Узнать подробности и записаться на лазерную
+								эпиляцию <br>вы можете по телефону</div>
+							<a href="tel:84956600303" class="footer-card-prices__phone">8 495 660-03-03</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- equipment-page -->
+
+			<section class="page__equipment equipment-page" id="equipment">
+				<div class="container">
+					<h3 class="equipment-page__title block-title">ИСПОЛЬЗУЕМ ОБОРУДОВАНИЕ НОВОГО ПОКОЛЕНИЯ</h3>
+					<h3 class="equipment-page__subtitle block-title">диодный лазер MeDioStar NeXT PRO</h3>
+					<div class="equipment-page__content content-equipment">
+						<div class="content-equipment__items">
+							<div class="content-equipment__item item-content">
+								<div class="item-content__border">
+									<div class="item-content__body">
+										<div class="item-content__image">
+											<img src="image/page/equipment/face.png" alt="">
+										</div>
+										<div class="item-content__title">Важное отличие лазера MeDioStar NeXT PRO</div>
+										<div class="item-content__text">Лазер исключает возможность появления пигментных
+											пятен,
+											благодаря чему процедуру можно проводить летом, до или сразу после отпуска в
+											жаркой
+											стране.</div>
+									</div>
+								</div>
+								<div class="item-content__view view-content">
+									<div class="view-content__image">
+										<img src="image/page/equipment/equipment.png"
+											srcset="image/page/equipment/equipment.png 1x, image/page/equipment/equipment_320.png 700w"
+											alt="">
+									</div>
+									<div class="view-content__video video-view">
+										<div class="video-view__disk">
+											<span>с</span>
+											<span>м</span>
+											<span>о</span>
+											<span>т</span>
+											<span>р</span>
+											<span>е</span>
+											<span>т</span>
+											<span>ь</span>
+											<span>в</span>
+											<span>и</span>
+											<span>д</span>
+											<span>е</span>
+											<span>о</span>
+											<span>о</span>
+											<span>л</span>
+											<span>а</span>
+											<span>з</span>
+											<span>е</span>
+											<span>р</span>
+											<span>е</span>
+											<span>m</span>
+											<span>e</span>
+											<span>d</span>
+											<span>i</span>
+											<span>o</span>
+											<span>s</span>
+											<span>t</span>
+											<span>a</span>
+											<span>r</span>
+											<span>n</span>
+											<span>e</span>
+											<span>x</span>
+											<span>t</span>
+											<span>p</span>
+											<span>r</span>
+											<span>o</span>
+										</div>
+										<div class="video-view__btn">
+											<a href="#" class="video-view__link"><span><i
+														class='fas fa-play'></i></span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-equipment__item item-content">
+								<p class="item-content__paragraph"><span>Лазер MeDioStar NeXT PRO произведен в
+										Германии</span>
+									компанией Asclepion. Уже более 50 лет компания Asclepion является мировым лидером на
+									рынке лазеров хирургии и эстетической медицины.</p>
+								<p class="item-content__paragraph"><span>MeDioStar NeXT PRO - это диодный лазер с двумя
+										длинами волн - 810 нм + 940 нм</span> - которые работают одновременно.</p>
+								<p class="item-content__paragraph"><span>Основная длина волны - 810 нм</span> -
+									клинически
+									подтверждена
+									как идеальная для удаления нежелательных волос.</p>
+								<p class="item-content__paragraph"><span>Длина волны 940 нм</span> разрушает сосуд,
+									питающий волос,
+									поэтому волосы удаляются
+									эффективно и безвозвратно.</p>
+							</div>
+						</div>
+						<button class="content-equipment__btn button-main modal-btn" type="submit">Записаться на
+							эпиляцию</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- effect-page -->
+
+			<section class="page__effect effect-page" id="effect">
+				<div class="container">
+					<div class="effect-page__content content-effect scroller-content">
+						<h4 class="content-effect__title section-title">КАКОЙ ЭФФЕКТ ДАЕТ КУРС ЛАЗЕРНОЙ ЭПИЛЯЦИИ</h4>
+						<div class="content-effect__body scroller-body">
+							<ul class="content-effect__list content-effect__list_left">
+								<li class="content-effect__text scroller-item">Гладкая кожа без<br> раздражения</li>
+								<li class="content-effect__text scroller-item">Максимально длительный<br> эффект на 3-5
+									лет</li>
+								<li class="content-effect__text scroller-item">Уход без использования<br> бритвы!</li>
+								<li class="content-effect__text scroller-item">Кожа мягкая<br> и бархатистая</li>
+							</ul>
+							<ul class="content-effect__list content-effect__list_right">
+								<li class="content-effect__text scroller-item">Больше никаких<br> вросших волос</li>
+								<li class="content-effect__text scroller-item">Ante egestas ac<br> adipiscing facilisi.
+								</li>
+								<li class="content-effect__text scroller-item">Ante egestas ac<br> adipiscing facilisi.
+								</li>
+								<li class="content-effect__text scroller-item">Ante egestas ac<br> adipiscing facilisi.
+								</li>
+							</ul>
+						</div>
+						<div class="content-effect__btns scroll__btns">
+							<span
+								class="content-effect__btn content-effect__btn_prev scroll__btn scroll__btn_prev"></span>
+							<span
+								class="content-effect__btn content-effect__btn_next scroll__btn scroll__btn_next"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- works-page -->
+
+			<section class="page__works works-page">
+				<div class="works-page__container container">
+					<div class="works-page__content content-works">
+						<h4 class="content-works__title section-title">Примеры наших работ</h4>
+						<div class="content-works__body body-works">
+							<div class="body-works__container swiper-container">
+								<div class="body-works__wrapper swiper-wrapper">
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/1.jpg" alt="">
+									</div>
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/2.jpg" alt="">
+									</div>
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/3.jpg" alt="">
+									</div>
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/1.jpg" alt="">
+									</div>
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/2.jpg" alt="">
+									</div>
+									<div class="body-works__slide swiper-slide">
+										<img src="image/page/works/3.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<!-- arrows -->
+							<div class="body-works__arrows">
+								<div
+									class="body-works__button body-works__button_prev slider-button__const slider-button__const_prev swiper-button-prev">
+									<div class="slider-button__container">
+										<i class='fas fa-less-than'></i>
+									</div>
+								</div>
+								<div
+									class="body-works__button body-works__button_next slider-button__const slider-button__const_next swiper-button-next">
+									<div class="slider-button__container">
+										<i class='fas fa-greater-than'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="content-works__btn button-main modal-btn" type="submit">Записаться на
+							эпиляцию</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- choice-page -->
+
+			<section class="page__choice choice-page">
+				<div class="container">
+					<div class="choice-page__content content-choice choice-page__scroller scroller-content">
+						<h4 class="content-choice__title section-title">ПОЧЕМУ ВЫБИРАЮТ МЕДЦЕНТР <br>
+							<span>“МЕДИКАЛКЛАБ”</span>
+						</h4>
+						<div class="content-choice__items scroller-body">
+							<div class="content-choice__item item-choice scroller-item">
+								<div class="item-choice__bg-image">
+									<div class="item-choice__image">
+										<img src="image/page/choice/1.png" alt="">
+									</div>
+								</div>
+								<div class="item-choice__text">Официальный медицинский центр <br><span>Работаем более 20
+										лет</span></div>
+							</div>
+							<div class="content-choice__item item-choice scroller-item">
+								<div class="item-choice__bg-image">
+									<div class="item-choice__image">
+										<img src="image/page/choice/2.png" alt="">
+									</div>
+								</div>
+								<div class="item-choice__text">Все спецалисты<br> <span>с медицинским
+										образованием</span></div>
+							</div>
+							<div class="content-choice__item item-choice scroller-item">
+								<div class="item-choice__bg-image">
+									<div class="item-choice__image">
+										<img src="image/page/choice/3.png" alt="">
+									</div>
+								</div>
+								<div class="item-choice__text"><span>Сертифицированное оборудование</span><br> с
+									регистрацией в РФ</div>
+							</div>
+							<div class="content-choice__item item-choice scroller-item">
+								<div class="item-choice__bg-image">
+									<div class="item-choice__image">
+										<img src="image/page/choice/4.png" alt="">
+									</div>
+								</div>
+								<div class="item-choice__text"><span>Комфортные условия</span><br>у нас нет очередей
+								</div>
+							</div>
+						</div>
+						<div class="content-choice__btns scroll__btns">
+							<span
+								class="content-choice__btn content-choice__btn_prev scroll__btn scroll__btn_prev"></span>
+							<span
+								class="content-choice__btn content-choice__btn_next scroll__btn scroll__btn_next"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- questions-page -->
+
+			<section class="page__questions questions-page">
+				<div class="container">
+					<div class="questions-page__content content-questions">
+						<div class="content-questions__column content-questions__column_faq column-faq">
+							<h4 class="column-faq__title section-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ / ЛАЗЕРНАЯ ЭПИЛЯЦИЯ
+							</h4>
+							<div class="column-faq__items">
+								<div class="column-faq__item item-faq">
+									<div class="item-faq__title title-item">
+										<div class="title-item__num"><span>1</span></div>
+										<div class="title-item__text">Какой у вас аппарат?</div>
+										<div class="title-item__plus"><span></span></div>
+									</div>
+									<div class="item-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Iste impedit aliquam vitae. Ex tempore totam voluptatibus, facilis molestiae ab
+										fuga dolorum iusto nam molestias, et tenetur aspernatur qui error eligendi.
+									</div>
+								</div>
+								<div class="column-faq__item item-faq">
+									<div class="item-faq__title title-item">
+										<div class="title-item__num"><span>2</span></div>
+										<div class="title-item__text">В чем преимущества диодной лазерной эпиляции?
+										</div>
+										<div class="title-item__plus"><span></span></div>
+									</div>
+									<div class="item-faq__text">Диодная лазерная эпиляция, которую мы используем в
+										салонах La Chance это - Возможность работать с разными типами волос;
+										Безболезненность и безопасность;
+										Отсутствие раздражений, ожогов после эпиляции; Селективное воздействие только на
+										фолликул волоса;
+										Быстрая обработка больших участков кожи; Обширное поражение фолликулов на один
+										сеанс</div>
+								</div>
+								<div class="column-faq__item item-faq">
+									<div class="item-faq__title title-item">
+										<div class="title-item__num"><span>3</span></div>
+										<div class="title-item__text">Какой у вас аппарат?</div>
+										<div class="title-item__plus"><span></span></div>
+									</div>
+									<div class="item-faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Laudantium sequi iure vitae fugiat harum alias fuga. Cum impedit esse, nesciunt,
+										corporis atque, necessitatibus nam provident facere voluptatum sunt nisi
+										pariatur?</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-questions__column content-questions__column_licenses column-licenses">
+							<div class="column-licenses__title section-title">Наши лицензии</div>
+							<div class="column-licenses__slider slider-licenses">
+								<div class="slider-licenses__container swiper-container">
+									<div class="slider-licenses__wrapper swiper-wrapper">
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+										<div class="slider-licenses__slide swiper-slide">
+											<img src="image/page/questions/licenses/sertificat.svg" alt="">
+										</div>
+									</div>
+								</div>
+								<!-- Arrows -->
+								<div class="slider-licenses__arrows slider-arrows">
+									<div
+										class="slider-licenses__button slider-licenses__button_prev swiper-button-prev slider-button slider-button-prev">
+										<i class='fas fa-less-than'></i>
+									</div>
+									<!-- Pagination -->
+									<div class="slider-licenses__pagination swiper-pagination slider-pagination"></div>
+									<div
+										class="slider-licenses__button slider-licenses__button_next swiper-button-next slider-button slider-button-next">
+										<i class='fas fa-greater-than'></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="questions-page__form form-questions">
+						<div class="form-questions__specialist specialist-form">
+							<div class="specialist-form__image">
+								<img src="image/page/questions/form/phone.png" alt="">
+							</div>
+							<div class="specialist-form__information information-specialist">
+								<p class="information-specialist__name">Иванова Ирина</p>
+								<p class="information-specialist__specialty">Косметолог</p>
+								<p class="information-specialist__experience">Опыт работы - 7 лет</p>
+							</div>
+						</div>
+						<form>
+							<fieldset>
+								<legend class="form-questions__legend">Задайте вопрос квалифицированному специалисту
+								</legend>
+								<textarea class="form-questions__area" placeholder="Ваш вопрос"></textarea>
+								<input class="form-questions__input" type="tel" placeholder="+7 (___) ---_--_--*"
+									pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+								<button class="form-questions__button" type="submit" value="Отправить">Задать
+									вопрос</button>
+							</fieldset>
+							<p class="form-questions__check">
+								<input type="checkbox">
+								<span>Даю согласие на обработку своих персональных данных <u>(Политика
+										конфиденциальности)</u></span>
+							</p>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- reviews-page -->
+
+			<section class="page__reviews reviews-page" id="reviews">
+				<div class="reviews-page__content content-reviews">
+					<h2 class="content-reviews__title block-title">Отзывы наших клиентов</h2>
+					<div class="content-reviews__slider slider-reviews">
+						<div class="slider-reviews__container swiper-container">
+							<div class="slider-reviews__wrapper swiper-wrapper">
+								<div class="slider-reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__body body-reviews">
+										<div class="body-reviews__header header-body">
+											<div class="header-body__name">Анна</div>
+											<div class="header-body__date">03/09/2020</div>
+										</div>
+										<div class="body-reviews__stars ">
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<div class="body-reviews__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Suspendisse sapien interdum tellus sem. Pellentesque vitae,
+											vitae, interdum sit magna a scelerisque augue habitant. Faucibus volutpat
+											sit pretium, velit. Erat in molestie praesent egestas quam vestibulum. Diam
+											hendrerit praesent amet ornare iaculis pulvinar tempor dui, dignissim. Amet
+											mi semper pretium, dignissim adipiscing diam sed. Amet, quisque risus et
+											arcu suscipit feugiat. Suspendisse tellus senectus in dolor mattis at.
+											Et consectetur interdum neque et faucibus euismod.Facilisi aliquet aliquam
+											dolor netus. Mi in et id sit ultricies. </div>
+									</div>
+									<div class="slide-reviews__source">источник:
+										<a href="#" class="slide-reviews__link">prodoctorov.ru</a>
+									</div>
+								</div>
+								<div class="slider-reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__body body-reviews">
+										<div class="body-reviews__header header-body">
+											<div class="header-body__name">Анна</div>
+											<div class="header-body__date">03/09/2020</div>
+										</div>
+										<div class="body-reviews__stars ">
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<div class="body-reviews__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Suspendisse sapien interdum tellus sem. Pellentesque vitae,
+											vitae, interdum sit magna a scelerisque augue habitant. Faucibus volutpat
+											sit pretium, velit. Erat in molestie praesent egestas quam vestibulum. Diam
+											hendrerit praesent amet ornare iaculis pulvinar tempor dui, dignissim. Amet
+											mi semper pretium, dignissim adipiscing diam sed. Amet, quisque risus et
+											arcu suscipit feugiat. Suspendisse tellus senectus in dolor mattis at.
+											Et consectetur interdum neque et faucibus euismod.Facilisi aliquet aliquam
+											dolor netus. Mi in et id sit ultricies. </div>
+									</div>
+									<div class="slide-reviews__source">источник:
+										<a href="#" class="slide-reviews__link">prodoctorov.ru</a>
+									</div>
+								</div>
+								<div class="slider-reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__body body-reviews">
+										<div class="body-reviews__header header-body">
+											<div class="header-body__name">Анна</div>
+											<div class="header-body__date">03/09/2020</div>
+										</div>
+										<div class="body-reviews__stars ">
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<div class="body-reviews__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Suspendisse sapien interdum tellus sem. Pellentesque vitae,
+											vitae, interdum sit magna a scelerisque augue habitant. Faucibus volutpat
+											sit pretium, velit. Erat in molestie praesent egestas quam vestibulum. Diam
+											hendrerit praesent amet ornare iaculis pulvinar tempor dui, dignissim. Amet
+											mi semper pretium, dignissim adipiscing diam sed. Amet, quisque risus et
+											arcu suscipit feugiat. Suspendisse tellus senectus in dolor mattis at.
+											Et consectetur interdum neque et faucibus euismod.Facilisi aliquet aliquam
+											dolor netus. Mi in et id sit ultricies. </div>
+									</div>
+									<div class="slide-reviews__source">источник:
+										<a href="#" class="slide-reviews__link">prodoctorov.ru</a>
+									</div>
+								</div>
+								<div class="slider-reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__body body-reviews">
+										<div class="body-reviews__header header-body">
+											<div class="header-body__name">Анна</div>
+											<div class="header-body__date">03/09/2020</div>
+										</div>
+										<div class="body-reviews__stars ">
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<div class="body-reviews__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Suspendisse sapien interdum tellus sem. Pellentesque vitae,
+											vitae, interdum sit magna a scelerisque augue habitant. Faucibus volutpat
+											sit pretium, velit. Erat in molestie praesent egestas quam vestibulum. Diam
+											hendrerit praesent amet ornare iaculis pulvinar tempor dui, dignissim. Amet
+											mi semper pretium, dignissim adipiscing diam sed. Amet, quisque risus et
+											arcu suscipit feugiat. Suspendisse tellus senectus in dolor mattis at.
+											Et consectetur interdum neque et faucibus euismod.Facilisi aliquet aliquam
+											dolor netus. Mi in et id sit ultricies. </div>
+									</div>
+									<div class="slide-reviews__source">источник:
+										<a href="#" class="slide-reviews__link">prodoctorov.ru</a>
+									</div>
+								</div>
+								<div class="slider-reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__body body-reviews">
+										<div class="body-reviews__header header-body">
+											<div class="header-body__name">Анна</div>
+											<div class="header-body__date">03/09/2020</div>
+										</div>
+										<div class="body-reviews__stars ">
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star checked"></span>
+											<span class="fas fa-star"></span>
+										</div>
+										<div class="body-reviews__text">Lorem ipsum dolor sit amet, consectetur
+											adipiscing elit. Suspendisse sapien interdum tellus sem. Pellentesque vitae,
+											vitae, interdum sit magna a scelerisque augue habitant. Faucibus volutpat
+											sit pretium, velit. Erat in molestie praesent egestas quam vestibulum. Diam
+											hendrerit praesent amet ornare iaculis pulvinar tempor dui, dignissim. Amet
+											mi semper pretium, dignissim adipiscing diam sed. Amet, quisque risus et
+											arcu suscipit feugiat. Suspendisse tellus senectus in dolor mattis at.
+											Et consectetur interdum neque et faucibus euismod.Facilisi aliquet aliquam
+											dolor netus. Mi in et id sit ultricies. </div>
+									</div>
+									<div class="slide-reviews__source">источник:
+										<a href="#" class="slide-reviews__link">prodoctorov.ru</a>
+									</div>
+								</div>
+							</div>
+							<!-- arrows -->
+							<div
+								class="slider-reviews__button slider-reviews__button_prev slider-button__const slider-button__const_prev swiper-button-prev">
+								<div class="slider-button__container"><i class='fas fa-less-than'></i></div>
+							</div>
+							<div
+								class="slider-reviews__button slider-reviews__button_next slider-button__const slider-button__const_next swiper-button-next">
+								<div class="slider-button__container"><i class='fas fa-greater-than'></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- offers-page -->
+
+			<section class="page__offers offers-page">
+				<div class="container">
+					<div class="offers-page__content content-offers">
+						<h1 class="content-offers__promotions">АКЦИИ и скидки</h1>
+						<h4 class="content-offers__title section-title">Выгодные предложения</h4>
+						<div class="content-offers__see-all"><a href="#" class="content-offers__link">Смотреть все
+								цены</a></div>
+						<div class="content-offers__slider slider-offers">
+							<div class="slider-offers__container swiper-container">
+								<div class="slider-offers__wrapper swiper-wrapper">
+									<div class="slider-offers__slide swiper-slide">
+										<div class="slider-offers__card card-offers">
+											<div class="card-offers__title">«Супер Лето»</div>
+											<div class="card-offers__subtitle">КОМПЛЕКС</div>
+											<div class="card-offers__text">
+												<p>Подмышки</p>
+												<p>+</p>
+												<p>Бикини</p>
+											</div>
+											<div class="card-offers__price">2 990 <i class='fas fa-ruble-sign'></i>
+											</div>
+											<div class="card-offers__btn"><a href="#"><span>Записаться</span></a></div>
+										</div>
+									</div>
+									<div class="slider-offers__slide swiper-slide">
+										<div class="slider-offers__card card-offers">
+											<div class="card-offers__title">«Супер Лето»</div>
+											<div class="card-offers__subtitle">КОМПЛЕКС</div>
+											<div class="card-offers__text">
+												<p>Подмышки</p>
+												<p>+</p>
+												<p>Бикини</p>
+											</div>
+											<div class="card-offers__price">2 990 <i class='fas fa-ruble-sign'></i>
+											</div>
+											<div class="card-offers__btn"><a href="#"><span>Записаться</span></a></div>
+										</div>
+									</div>
+									<div class="slider-offers__slide swiper-slide">
+										<div class="slider-offers__card card-offers">
+											<div class="card-offers__title">«Супер Лето»</div>
+											<div class="card-offers__subtitle">КОМПЛЕКС</div>
+											<div class="card-offers__text">
+												<p>Подмышки</p>
+												<p>+</p>
+												<p>Бикини</p>
+											</div>
+											<div class="card-offers__price">2 990 <i class='fas fa-ruble-sign'></i>
+											</div>
+											<div class="card-offers__btn"><a href="#"><span>Записаться</span></a></div>
+										</div>
+									</div>
+									<div class="slider-offers__slide swiper-slide">
+										<div class="slider-offers__card card-offers">
+											<div class="card-offers__title">«Супер Лето»</div>
+											<div class="card-offers__subtitle">КОМПЛЕКС</div>
+											<div class="card-offers__text">
+												<p>Подмышки</p>
+												<p>+</p>
+												<p>Бикини</p>
+											</div>
+											<div class="card-offers__price">2 990 <i class='fas fa-ruble-sign'></i>
+											</div>
+											<div class="card-offers__btn"><a href="#"><span>Записаться</span></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- arrows -->
+							<div class="slider-offers__arrows slider-arrows">
+								<div
+									class="slider-offers__button slider-offers__button_prev slider-button__const slider-button__const_prev swiper-button-prev">
+									<div class="slider-button__container"><i class='fas fa-less-than'></i></div>
+								</div>
+								<div
+									class="slider-offers__button slider-offers__button_next slider-button__const slider-button__const_next swiper-button-next">
+									<div class="slider-button__container"><i class='fas fa-greater-than'></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- specialists-page -->
+
+			<section class="page__specialists specialists-page">
+				<div class="container">
+					<div class="specialists-page__content content-specialists">
+						<h4 class="content-specialists__title section-title">СПЕЦИАЛИСТЫ ПО ЛАЗЕРНОЙ ЭПИЛЯЦИИ</h4>
+						<div class="content-specialists__slider slider-reviews">
+							<div class="slider-specialists__container swiper-container">
+								<div class="slider-specialists__wrapper swiper-wrapper">
+									<div class="slider-specialists__slide swiper-slide">
+										<div class="slider-specialists__card card-specialists">
+											<div class="card-specialists__image image-card">
+												<div class="image-card__body">
+													<img src="image/page/specialists/1.jpg" alt="">
+												</div>
+											</div>
+											<div class="card-specialists__information information-card">
+												<p class="information-card__name">Иванова Анастасия</p>
+												<p class="information-card__specialty">Косметолог</p>
+												<p class="information-card__experience">Опыт работы - 7 лет</p>
+												<p class="information-card__metro">Домодедовская</p>
+												<p class="information-card__address">пос. Володарского, ул. Центральная,
+													д.
+													30А</p>
+												<div class="information-card__btn btn-content">
+													<div class="btn-content__body button-main">
+														<a href="#"
+															class="btn-content__link button-main__link">Подробнее о
+															враче</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="slider-specialists__slide swiper-slide">
+										<div class="slider-specialists__card card-specialists">
+											<div class="card-specialists__image image-card">
+												<div class="image-card__body">
+													<img src="image/page/specialists/2.jpg" alt="">
+												</div>
+											</div>
+											<div class="card-specialists__information information-card">
+												<p class="information-card__name">Юсупова Милана</p>
+												<p class="information-card__specialty">Косметолог</p>
+												<p class="information-card__experience">Опыт работы - 7 лет</p>
+												<p class="information-card__metro">Домодедовская</p>
+												<p class="information-card__address">пос. Володарского, ул. Центральная,
+													д.
+													30А</p>
+												<div class="information-card__btn btn-content">
+													<div class="btn-content__body button-main">
+														<a href="#"
+															class="btn-content__link button-main__link">Подробнее о
+															враче</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- arrows -->
+							<div class="slider-specialists__arrows slider-arrows">
+								<div
+									class="slider-specialists__button slider-specialists__button_prev slider-button__const slider-button__const_prev swiper-button-prev">
+									<div class="slider-button__container"><i class='fas fa-less-than'></i></div>
+								</div>
+								<div
+									class="slider-specialists__button slider-specialists__button_next slider-button__const slider-button__const_next swiper-button-next">
+									<div class="slider-button__container"><i class='fas fa-greater-than'></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- request-page -->
+
+			<section class="page__request request-page" id="request">
+				<div class="container">
+					<div class="request-page__content content-request">
+						<h2 class="content-request__title">Лазерная эпиляция <br>в <span>«МЕДИКАЛКЛАБ»</span></h2>
+						<div class="content-request__image image-request">
+							<div class="image-request__body image-request__body_small">
+								<div class="image-request__text"><span>-40%</span>
+								</div>
+							</div>
+						</div>
+						<div class="content-request__items">
+							<div class="content-request__item"><span>Быстро</span><br> 5-10 минут</div>
+							<div class="content-request__item"><span>Эффективно</span><br> эффект на 3-5 лет</div>
+							<div class="content-request__item"><span>Без боли</span><br> мягкость и комфорт</div>
+						</div>
+						<div class="content-request__form form-request">
+							<form>
+								<fieldset>
+									<legend class="form-request__legend">Оставьте заявку</legend>
+									<p class="form-request__text">Оставьте заявку прямо сейчас и получите фиксированную
+										<span>скидку -40%</span><br>
+										на первый сеанс эпиляции
+									</p>
+									<input class="form-request__input" type="text" placeholder="Ваше имя*">
+									<input class="form-request__input" type="tel" placeholder="+7 (___) ---_--_--*"
+										pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+									<input class="form-request__input" type="email" placeholder="Email">
+									<div class="form-request__select select-request">
+										<select name="clinic">
+											<option value="" disabled selected>Выберете клинику*</option>
+											<option value="Медцентр на Малой Юшуньской">Медцентр на Малой Юшуньской
+											</option>
+											<option value="Медцентр в Жулебино">Медцентр в Жулебино</option>
+											<option value="Медцентр на Домодедовской">Медцентр на Домодедовской</option>
+										</select>
+										<div class="select-request__arrow"></div>
+									</div>
+								</fieldset>
+								<fieldset>
+									<button class="form-request__button button-main modal-btn" type="submit"
+										value="Отправить">Получить скидку!</button>
+									<div class="form-request__check">
+										<input type="checkbox">
+										<p>
+											Даю согласие на обработку своих персональных данных <span>(Политика
+												конфиденциальности)</span>
+										</p>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="content-request__promotion">Акция действует только для новых клиентов <span>до
+								конца мая 2021 года</span></div>
+						<div class="content-request__cards">
+							<div class="content-request__card card-request">
+								<a href="#" class="card-request__address"><span>в Жулебино</span><br> Жулебинский
+									бульвар 25
+								</a>
+							</div>
+							<div class="content-request__card card-request">
+								<a href="#" class="card-request__address"><span>в Жулебино</span><br> Жулебинский
+									бульвар 25
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- footer -->
+
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="container">
+					<div class="top-footer__body">
+						<div class="top-footer__logo">
+							<picture>
+								<source srcset="image/header/logo.svg" type="image/svg">
+								<img src="image/header/logo.png" alt="">
+							</picture>
+						</div>
+						<div class="top-footer__contact contact-footer">
+							<div class="contact-footer__live live-contact">
+								<p class="live-contact__email"><a
+										href="mailto:info@medicalclub.ru">info@medicalclub.ru</a>
+								</p>
+								<p class="live-contact__tel"><a href="tel:84951538685">8 495 153-86-85</a></p>
+							</div>
+							<div class="contact-footer__social social-contact">
+								<ul class="social-contact__list">
+									<li><a href="#" class="social-contact__link social-contact__link_vk"><i
+												class='fab fa-vk'></i></a></li>
+									<li><a href="#" class="social-contact__link social-contact__link_instagram"><i
+												class='fab fa-instagram'></i></a></li>
+									<li><a href="#" class="social-contact__link social-contact__link_facebook"><i
+												class='fab fa-facebook-f'></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="container">
+					<div class="bottom-footer__body">
+						<div class="bottom-footer__text">
+							<span>
+								© ООО «Аркада», ООО «Доктор с Вами», ООО «Меди Клаб»
+								2000-2020. Политика конфиденциальности
+								</span>
+						</div>
+						<div class="bottom-footer__image">
+							<img src="image/footer/webolution.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Подключение иконок -->
+	<script src="https://kit.fontawesome.com/9e73be8edf.js" crossorigin="anonymous"></script>
+
+	<!-- Подключение слайдера -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script src="js/slider-advantages.js"></script>
+	<script src="js/slider-zones.js"></script>
+	<script src="js/slider-works.js"></script>
+	<script src="js/slider-questions.js"></script>
+	<script src="js/slider-reviews.js"></script>
+	<script src="js/slider-offers.js"></script>
+	<script src="js/slider-specialists.js"></script>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
