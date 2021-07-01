@@ -3804,6 +3804,14 @@ body {
           justify-content: flex-end;
 }
 
+@media (max-width: 1000px) {
+  .content-effect__list_right li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (min-width: 1001px) {
   .content-effect__list_right li:nth-child(odd) p {
     margin: 0 0 0 20px;
