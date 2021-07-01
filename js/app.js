@@ -32,7 +32,7 @@ let dataScrolls = document.querySelectorAll('.bottom-header__link');
 for (let dataScroll of dataScrolls) {
 	let dataScrollId = dataScroll.getAttribute("data-scroll");
 	let sectionId = document.querySelector(dataScrollId);
-	let heightHeader = document.querySelector('.header').offsetHeight;
+	const bottomHeaderList = document.querySelector('.bottom-header__list').getBoundingClientRect().bottom;
 
 	dataScroll.onclick = function (e) {
 		e.preventDefault();
@@ -50,17 +50,10 @@ for (let dataScroll of dataScrolls) {
 		}
 
 		if (dataScroll.hasAttribute('data-scroll')) {
-			if (wrapper.offsetWidth >= 870) {
-				window.scrollTo({
-					top: sectionId.offsetTop - heightHeader,
-					behavior: "smooth"
-				});
-			} else if (wrapper.offsetWidth <= 870) {
-				window.scrollTo({
-					top: sectionId.offsetTop - (heightHeader + 68),
-					behavior: "smooth"
-				});
-			}
+			window.scrollTo({
+				top: sectionId.offsetTop - bottomHeaderList,
+				behavior: "smooth"
+			});
 		} else {
 			return;
 		}

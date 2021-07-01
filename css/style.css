@@ -490,7 +490,7 @@ body {
   background: #ffffff;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .header__top {
     margin: 0 -15px;
     padding: 15px 15px 10px;
@@ -506,13 +506,14 @@ body {
 }
 
 .header__bottom {
-  padding: 18px 0;
+  height: 60px;
   position: relative;
   background: #ffffff;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .header__bottom {
+    height: auto;
     padding: 0;
     z-index: 10;
   }
@@ -639,7 +640,7 @@ body {
   z-index: 5;
 }
 
-@media (min-width: 931px) {
+@media (min-width: 1031px) {
   .burger {
     display: none;
   }
@@ -861,6 +862,7 @@ body {
 
 .bottom-header__list {
   width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,8 +875,9 @@ body {
   background: #f8fafd;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .bottom-header__list {
+    height: auto;
     max-height: 100%;
     padding-top: 73px;
     display: block;
@@ -903,7 +906,7 @@ body {
   transition: all 0.3s linear;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .bottom-header__list li {
     padding: 22px 0;
     border-bottom: 1px dashed rgba(31, 31, 41, 0.2);
@@ -914,7 +917,7 @@ body {
   margin: 0 16px 0 18px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .bottom-header__list li:last-child {
     margin: 0;
   }
@@ -961,7 +964,7 @@ body {
   background: transparent;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .bottom-header__modal {
     top: 0;
   }
@@ -1601,7 +1604,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #425674;
-  background-image: url(../image/header/m.png);
+  background-image: url(../image/metro.png);
   background-repeat: no-repeat;
   background-position: 0 8px;
   background-size: 16px auto;
@@ -1642,7 +1645,7 @@ body {
   padding-top: 133px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1030px) {
   .page {
     padding-top: 73px;
   }
