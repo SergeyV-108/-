@@ -400,11 +400,11 @@
 							<!-- Arrows -->
 							<div class="slider-advantages__arrows slider-arrows">
 								<div
-									class="slider-advantages__button swiper-button-prev slider-button slider-button-prev">
+									class="slider-advantages__button slider-advantages__button_prev swiper-button-prev slider-button slider-button-prev">
 									<i class='fas fa-less-than'></i>
 								</div>
 								<div
-									class="slider-advantages__button swiper-button-next slider-button slider-button-next">
+									class="slider-advantages__button slider-advantages__button_next swiper-button-next slider-button slider-button-next">
 									<i class='fas fa-greater-than'></i>
 								</div>
 							</div>
@@ -452,12 +452,12 @@
 							</div>
 							<!-- Arrows -->
 							<div class="slider-zones__arrows slider-arrows">
-								<div class="slider-zones__button swiper-button-prev slider-button slider-button-prev">
+								<div class="slider-zones__button slider-zones__button_prev swiper-button-prev slider-button slider-button-prev">
 									<i class='fas fa-less-than'></i>
 								</div>
 								<!-- Pagination -->
 								<div class="slider-zones__pagination swiper-pagination slider-pagination"></div>
-								<div class="slider-zones__button swiper-button-next slider-button slider-button-next">
+								<div class="slider-zones__button slider-zones__button_next swiper-button-next slider-button slider-button-next">
 									<i class='fas fa-greater-than'></i>
 								</div>
 							</div>
@@ -708,7 +708,7 @@
 
 			<!-- effect-page -->
 
-			<section class="page__effect effect-page" id="effect">
+			<!-- <section class="page__effect effect-page" id="effect">
 				<div class="container">
 					<div class="effect-page__content content-effect scroller-content">
 						<h4 class="content-effect__title section-title">КАКОЙ ЭФФЕКТ ДАЕТ КУРС ЛАЗЕРНОЙ ЭПИЛЯЦИИ</h4>
@@ -747,11 +747,54 @@
 							</ul>
 						</div>
 						<div class="content-effect__btns scroll__btns">
-							<span class="content-effect__btn content-effect__btn_prev scroll__btn scroll__btn_prev"><i
-									class='fas fa-less-than'></i></span>
-							<span class="content-effect__btn content-effect__btn_next scroll__btn scroll__btn_next"><i
-									class='fas fa-greater-than'></i></span>
+							<span class="content-effect__btn content-effect__btn_prev scroll__btn scroll__btn_prev"><i class='fas fa-less-than'></i></span>
+							<span class="content-effect__btn content-effect__btn_next scroll__btn scroll__btn_next"><i class='fas fa-greater-than'></i></span>
 						</div>
+					</div>
+				</div>
+			</section> -->
+
+			<section class="page__effect effect-page" id="effect">
+				<div class="effect-page__content content-effect">
+					<h4 class="content-effect__title section-title">КАКОЙ ЭФФЕКТ ДАЕТ КУРС ЛАЗЕРНОЙ ЭПИЛЯЦИИ</h4>
+					<div class="content-effect__body swiper-container">
+						<ul class="content-effect__list swiper-wrapper">
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Гладкая кожа без<br> раздражения</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Максимально длительный<br> эффект на 3-5
+									лет</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Уход без использования<br> бритвы!</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Кожа мягкая<br> и бархатистая</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Больше никаких<br> вросших волос</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Ante egestas ac<br> adipiscing
+									facilisi.</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Ante egestas ac<br> adipiscing
+									facilisi.</span>
+							</li>
+							<li class="content-effect__text swiper-slide">
+								<p><i class='fas fa-check'></i></p><span>Ante egestas ac<br> adipiscing
+									facilisi.</span>
+							</li>
+						</ul>
+						<!-- scrollbar -->
+						<div class="content-effect__scrollbar swiper-scrollbar"></div>
+						<!-- arrows -->
+						<div class="content-effect__button content-effect__button_prev swiper-button-next"><i
+								class='fas fa-less-than'></i></div>
+						<div class="content-effect__button content-effect__button_next swiper-button-prev"><i
+								class='fas fa-greater-than'></i></div>
 					</div>
 				</div>
 			</section>
@@ -810,55 +853,57 @@
 			<!-- choice-page -->
 
 			<section class="page__choice choice-page">
-				<div class="container">
-					<div class="choice-page__content content-choice choice-page__scroller scroller-content">
-						<h4 class="content-choice__title section-title">ПОЧЕМУ ВЫБИРАЮТ МЕДЦЕНТР <br>
-							<span>“МЕДИКАЛКЛАБ”</span>
-						</h4>
-						<div class="content-choice__items scroller-body">
-							<div class="content-choice__item item-choice scroller-item">
-								<div class="item-choice__bg-image">
-									<div class="item-choice__image">
+				<div class="choice-page__content content-choice">
+					<h4 class="content-choice__title section-title">ПОЧЕМУ ВЫБИРАЮТ МЕДЦЕНТР <br>
+						<span>“МЕДИКАЛКЛАБ”</span>
+					</h4>
+					<div class="content-choice__container swiper-container">
+						<div class="content-choice__wrapper swiper-wrapper">
+							<div class="content-choice__slide slide-choice swiper-slide">
+								<div class="slide-choice__bg-image">
+									<div class="slide-choice__image">
 										<img src="image/page/choice/1.png" alt="">
 									</div>
 								</div>
-								<div class="item-choice__text">Официальный медицинский центр <br><span>Работаем более 20
+								<div class="slide-choice__text">Официальный медицинский центр <br><span>Работаем более
+										20
 										лет</span></div>
 							</div>
-							<div class="content-choice__item item-choice scroller-item">
-								<div class="item-choice__bg-image">
-									<div class="item-choice__image">
+							<div class="content-choice__slide slide-choice swiper-slide">
+								<div class="slide-choice__bg-image">
+									<div class="slide-choice__image">
 										<img src="image/page/choice/2.png" alt="">
 									</div>
 								</div>
-								<div class="item-choice__text">Все спецалисты<br> <span>с медицинским
+								<div class="slide-choice__text">Все спецалисты<br> <span>с медицинским
 										образованием</span></div>
 							</div>
-							<div class="content-choice__item item-choice scroller-item">
-								<div class="item-choice__bg-image">
-									<div class="item-choice__image">
+							<div class="content-choice__slide slide-choice swiper-slide">
+								<div class="slide-choice__bg-image">
+									<div class="slide-choice__image">
 										<img src="image/page/choice/3.png" alt="">
 									</div>
 								</div>
-								<div class="item-choice__text"><span>Сертифицированное оборудование</span><br> с
+								<div class="slide-choice__text"><span>Сертифицированное оборудование</span><br> с
 									регистрацией в РФ</div>
 							</div>
-							<div class="content-choice__item item-choice scroller-item">
-								<div class="item-choice__bg-image">
-									<div class="item-choice__image">
+							<div class="content-choice__slide slide-choice swiper-slide">
+								<div class="slide-choice__bg-image">
+									<div class="slide-choice__image">
 										<img src="image/page/choice/4.png" alt="">
 									</div>
 								</div>
-								<div class="item-choice__text"><span>Комфортные условия</span><br>у нас нет очередей
+								<div class="slide-choice__text"><span>Комфортные условия</span><br>у нас нет очередей
 								</div>
 							</div>
 						</div>
-						<div class="content-choice__btns scroll__btns">
-							<span class="content-choice__btn content-choice__btn_prev scroll__btn scroll__btn_prev"><i
-									class='fas fa-less-than'></i></span>
-							<span class="content-choice__btn content-choice__btn_next scroll__btn scroll__btn_next"><i
-									class='fas fa-greater-than'></i></span>
-						</div>
+						<!-- scrollbar -->
+						<div class="content-choice__scrollbar swiper-scrollbar"></div>
+						<!-- arrows -->
+						<div class="content-choice__button content-choice__button_prev swiper-button-next"><i
+								class='fas fa-less-than'></i></div>
+						<div class="content-choice__button content-choice__button_next swiper-button-prev"><i
+								class='fas fa-greater-than'></i></div>
 					</div>
 				</div>
 			</section>
@@ -1451,7 +1496,9 @@
 
 	<script src="js/slider-advantages.js"></script>
 	<script src="js/slider-zones.js"></script>
+	<script src="js/slider-effect.js"></script>
 	<script src="js/slider-works.js"></script>
+	<script src="js/slider-choice.js"></script>
 	<script src="js/slider-questions.js"></script>
 	<script src="js/slider-reviews.js"></script>
 	<script src="js/slider-offers.js"></script>

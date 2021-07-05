@@ -1,6 +1,6 @@
 // Инициализируем слайдер
 
-var swiper = new Swiper('.slider-licenses__container', {
+var licensesSlider = new Swiper('.slider-licenses__container', {
 
 	navigation: {
 		nextEl: '.slider-licenses__button_next',

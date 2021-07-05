@@ -1,6 +1,6 @@
 // Инициализируем слайдер
 
-var swiper = new Swiper('.body-works__container', {
+var worksSlider = new Swiper('.body-works__container', {
 
 	navigation: {
 		nextEl: '.body-works__button_next',

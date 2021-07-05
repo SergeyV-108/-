@@ -1,16 +1,16 @@
 // Инициализируем слайдер
 
-var swiper = new Swiper('.slider-zones__container', {
+var zonesSlider = new Swiper('.slider-zones__container', {
 
 	navigation: {
-		nextEl: '.slider-button-next',
-		prevEl: '.slider-button-prev',
+		nextEl: '.slider-zones__button_next',
+		prevEl: '.slider-zones__button_prev',
 	},
 
 	pagination: {
 		el: '.slider-zones__pagination',
 		type: "fraction",
-	  },
+	},
 
 	//Кол-во слайдов для показа
 	slidesPerView: 'auto',

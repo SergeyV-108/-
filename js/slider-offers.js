@@ -1,6 +1,6 @@
 // Инициализируем слайдер
 
-var swiper = new Swiper('.slider-offers__container', {
+var offersSlider = new Swiper('.slider-offers__container', {
 
 	navigation: {
 		nextEl: '.slider-offers__button_next',

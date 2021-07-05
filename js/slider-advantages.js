@@ -1,10 +1,10 @@
 // Инициализируем слайдер
 
-var swiper = new Swiper('.slider-advantages__container', {
+var advantagesSlider = new Swiper('.slider-advantages__container', {
 
 	navigation: {
-		nextEl: '.slider-button-next',
-		prevEl: '.slider-button-prev',
+		nextEl: '.slider-advantages__button_next',
+		prevEl: '.slider-advantages__button_prev',
 	},
 
 	//Кол-во слайдов для показа
