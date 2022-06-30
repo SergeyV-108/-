@@ -46,7 +46,7 @@ var effectSlider = new Swiper('.content-effect__body', {
 
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
 	if (window.innerWidth > 1000) {
 		effectSlider.disable();
 	} else {
